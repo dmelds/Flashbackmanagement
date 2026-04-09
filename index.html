@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta name="description" content="13 Steps for Managing Flashbacks - offline phone-friendly app" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <title>Flashback Steps</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --bg2: #111722;
+      --card: #151c26;
+      --card2: #1b2431;
+      --text: #eef4fb;
+      --muted: #a7b5c8;
+      --accent: #8fd0ff;
+      --accent-soft: rgba(143, 208, 255, 0.14);
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 12px 12px 40px;
+    }
+
+    .floating-calm {
+      position: fixed;
+      right: 12px;
+      bottom: 14px;
+      z-index: 30;
+    }
+
+    .step {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+      margin: 12px 0;
+    }
+
+    .num {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(143,208,255,0.26);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      line-height: 1.3;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .subpoints {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .subpoint {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .subpoint strong {
+      color: var(--accent);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 20px;
+      padding-bottom: 56px;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--card2);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .focus {
+      position: fixed;
+      inset: 0;
+      background: #0b0d10;
+      display: none;
+      z-index: 100;
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .focus.show {
+      display: block;
+    }
+
+    .focus-card {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .focus h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+
+    .focus p {
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .close-row {
+      margin-top: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 10px 10px 28px;
+      }
+
+      .step {
+        border-radius: 18px;
+      }
+
+      h2 {
+        font-size: 1.04rem;
+      }
+
+      p, .btn {
+        font-size: 0.97rem;
+      }
+
+      .floating-calm {
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="step">
+      <div class="num">1</div>
+      <h2>Say to yourself: “I am having a flashback.”</h2>
+      <p>Flashbacks can pull you into a timeless part of the mind that feels as helpless, hopeless, and surrounded by danger as you were in childhood. The feelings and sensations you are experiencing are past memories that cannot hurt you now.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">2</div>
+      <h2>Remind yourself: “I feel afraid, but I am not in danger. I am safe now, here in the present.”</h2>
+      <p>Remember that you are in the safety of the present, far from the danger of the past.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">3</div>
+      <h2>Own your right and need to have boundaries.</h2>
+      <p>Remind yourself that you do not have to allow anyone to mistreat you. You are free to leave dangerous situations and protest unfair behavior.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">4</div>
+      <h2>Speak reassuringly to the inner child.</h2>
+      <p>The child needs to know that you love them unconditionally and that they can come to you for comfort and protection when they feel lost and scared.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">5</div>
+      <h2>Deconstruct eternity thinking.</h2>
+      <p>In childhood, fear and abandonment felt endless, and a safer future was unimaginable. Remind yourself that this flashback will pass, as it has before.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">6</div>
+      <h2>Remind yourself that you are in an adult body now.</h2>
+      <p>You have allies, skills, and resources to protect yourself that you did not have as a child. Feeling small and fragile can be a sign of a flashback.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">7</div>
+      <h2>Ease back into your body.</h2>
+      <p>Fear can launch you into worrying, numbing, or spacing out. Gently return to your body.</p>
+      <div class="subpoints">
+        <div class="subpoint"><strong>7a. Relax your body.</strong><br>Feel each major muscle group and softly encourage it to relax. Tight muscles can send false danger signals to your brain.</div>
+        <div class="subpoint"><strong>7b. Breathe deeply and slowly.</strong><br>Holding your breath can also signal danger.</div>
+        <div class="subpoint"><strong>7c. Slow down.</strong><br>Rushing presses your brain’s flight-response button.</div>
+        <div class="subpoint"><strong>7d. Find a safe place to unwind and soothe yourself.</strong><br>Wrap yourself in a blanket, hold a pillow or stuffed animal, lie down, rest in a quiet place, or take a bath or nap.</div>
+        <div class="subpoint"><strong>7e. Feel the fear in your body without reacting to it.</strong><br>Fear is an energy in your body. It cannot hurt you if you do not run from it.</div>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="num">8</div>
+      <h2>Resist the inner critic’s drasticizing and catastrophizing.</h2>
+      <div class="subpoints">
+        <div class="subpoint"><strong>8a. Use thought-stopping.</strong><br>Halt the critic’s endless exaggerations of danger and its constant planning to control the uncontrollable. Refuse to shame, hate, or abandon yourself. Channel the anger of self-attack into saying “No” to unfair self-criticism.</div>
+        <div class="subpoint"><strong>8b. Use thought-substitution and thought-correction.</strong><br>Replace negative thinking with a memorized list of your qualities and accomplishments.</div>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="num">9</div>
+      <h2>Allow yourself to grieve.</h2>
+      <p>Flashbacks can be opportunities to release old, unexpressed feelings of fear, hurt, and abandonment. Validate and soothe your child-self’s past experience of helplessness and hopelessness. Healthy grieving can turn tears into self-compassion and anger into self-protection.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">10</div>
+      <h2>Cultivate safe relationships and seek support.</h2>
+      <p>Take time alone when you need it, but do not let shame isolate you. Feeling shame does not mean you are shameful. Educate trusted people about flashbacks and ask them to help you talk and feel your way through them.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">11</div>
+      <h2>Learn to identify the triggers that lead to flashbacks.</h2>
+      <p>Avoid unsafe people, places, activities, and triggering mental processes where you can. Practice preventive care with these steps when triggering situations are unavoidable.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">12</div>
+      <h2>Figure out what you are flashing back to.</h2>
+      <p>Flashbacks can be opportunities to discover, validate, and heal wounds from past abuse and abandonment. They can also point to unmet developmental needs and motivate you to get those needs met.</p>
+    </section>
+
+    <section class="step">
+      <div class="num">13</div>
+      <h2>Be patient with a slow recovery process.</h2>
+      <p>It takes time in the present to become less activated, and more time in the future to gradually decrease the intensity, duration, and frequency of flashbacks. Real recovery is usually gradual, often two steps forward and one step back. Do not beat yourself up for having a flashback.</p>
+    </section>
+
+    <p class="footer">You deserve steadiness, safety, and patience while moving through this.</p>
+  </main>
+
+  <div class="floating-calm">
+    <button class="btn" id="focusBtn">Calm view</button>
+  </div>
+
+  <div class="focus" id="focusView" aria-hidden="true">
+    <div class="focus-card">
+      <h3>Calm view</h3>
+      <p>
+        I am having a flashback.<br><br>
+        I feel afraid, but I am not in danger.<br>
+        I am safe now, here in the present.<br><br>
+        This will pass.<br>
+        I am in an adult body now.<br>
+        I have more skills, choices, and protection than I did before.<br><br>
+        Slow down.<br>
+        Breathe slowly.<br>
+        Relax your body.<br>
+        Return to the present.
+      </p>
+      <div class="close-row">
+        <button class="btn" id="closeFocusBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js').catch(() => {});
+      });
+    }
+
+    const focus = document.getElementById('focusView');
+
+    document.getElementById('focusBtn').addEventListener('click', () => {
+      focus.classList.add('show');
+      focus.setAttribute('aria-hidden', 'false');
+    });
+
+    document.getElementById('closeFocusBtn').addEventListener('click', () => {
+      focus.classList.remove('show');
+      focus.setAttribute('aria-hidden', 'true');
+    });
+
+    let deferredPrompt = null;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+    });
+  </script>
+</body>
+</html>
